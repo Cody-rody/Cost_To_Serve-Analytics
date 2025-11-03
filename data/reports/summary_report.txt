@@ -1,0 +1,10 @@
+=== LOGISTICS PERFORMANCE REPORT ===
+
+Average Waiting Time: 35.06 minutes
+Average Fuel Cost Estimate: ₹156.96
+Average Asset Utilization: 79.60%
+
+=== INSIGHTS & RECOMMENDATIONS ===
+- Fuel costs appear under control compared to utilization.
+- Waiting times are moderate. Continuous monitoring recommended.
+- Asset utilization is at a healthy balance.

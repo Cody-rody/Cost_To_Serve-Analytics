@@ -1,0 +1,25 @@
+📊 COST-TO-SERVE METRICS LIST
+
+A. Core Cost Metrics
+
+1.Fuel Cost Estimate    
+2.Average Handling Cost per Shipment  
+3.Cost per Asset Utilization  
+4.Inventory Holding Cost
+5.Delay Penalty or Service Deviation Cost
+
+B. Operational Efficiency Metrics
+6. Average Waiting Time per Shipment
+7. Traffic Delay Index
+8. Temperature & Humidity Deviation Impact
+9. Demand Fulfillment Rate
+
+C. Customer & Revenue Metrics
+10. Revenue per Shipment
+11. Customer Frequency Index
+12. Cost-to-Revenue Ratio (CTR)
+
+D. Advanced Business Insights
+13. Predictive Delay Model
+14. Profitability by Region or Asset
+15. Customer Lifetime Value (CLV)
