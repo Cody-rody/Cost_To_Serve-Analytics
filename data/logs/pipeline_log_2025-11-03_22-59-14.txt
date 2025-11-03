@@ -1,0 +1,36 @@
+[22:59:14] 
+=== LOGISTICS PIPELINE EXECUTION STARTED ===
+[22:59:14]  Starting: Data Visualization
+[22:59:23]  Data Visualization completed in 9.29 seconds.
+[22:59:23]  Starting: Fuel Cost Estimation
+[22:59:25]  Fuel Cost Estimation completed in 1.17 seconds.
+[22:59:25]  Starting: Asset Utilization Cost
+[22:59:26]  Asset Utilization Cost completed in 1.09 seconds.
+[22:59:26]  Starting: Handling Cost Estimation
+[22:59:27]  Handling Cost Estimation completed in 0.96 seconds.
+[22:59:27]  Starting: Inventorry Holding Cost
+[22:59:28]  Inventorry Holding Cost completed in 0.95 seconds.
+[22:59:28]  Starting: Delay Penalty
+[22:59:28]  Delay Penalty completed in 0.91 seconds.
+[22:59:29]  Starting: Report Generation
+[22:59:29]  Report Generation completed in 0.84 seconds.
+[22:59:29]  Starting: Traffic Optimization
+[22:59:30]  Traffic Optimization completed in 0.87 seconds.
+[22:59:30]  Starting: Waiting Time Optimization
+[22:59:31]  Waiting Time Optimization completed in 0.86 seconds.
+[22:59:31]  Starting: Asset Utilization Optimization
+[22:59:32]  Asset Utilization Optimization completed in 0.82 seconds.
+[22:59:32]  Starting: Driver Performance Optimization
+[22:59:33]  Error in Driver Performance Optimization: Traceback (most recent call last):
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\src\prescriptive\deriver_perfomance_optimization.py", line 131, in <module>
+    main()
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\src\prescriptive\deriver_perfomance_optimization.py", line 120, in main
+    df = preprocess(df)
+         ^^^^^^^^^^^^^^
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\src\prescriptive\deriver_perfomance_optimization.py", line 38, in preprocess
+    raise KeyError(f"Missing column: {col}")
+KeyError: 'Missing column: delay_penalty'
+
+[22:59:33]  Pipeline halted at stage: Driver Performance Optimization
+[22:59:33] 
+ Pipeline finished in 18.67 seconds.

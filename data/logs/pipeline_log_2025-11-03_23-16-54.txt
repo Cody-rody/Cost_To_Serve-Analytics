@@ -1,0 +1,30 @@
+[23:16:54] 
+=== LOGISTICS PIPELINE EXECUTION STARTED ===
+[23:16:54]  Starting: Data Visualization
+[23:17:03]  Data Visualization completed in 8.44 seconds.
+[23:17:03]  Starting: Fuel Cost Estimation
+[23:17:04]  Fuel Cost Estimation completed in 1.08 seconds.
+[23:17:04]  Starting: Asset Utilization Cost
+[23:17:05]  Asset Utilization Cost completed in 1.14 seconds.
+[23:17:05]  Starting: Handling Cost Estimation
+[23:17:06]  Handling Cost Estimation completed in 0.89 seconds.
+[23:17:06]  Starting: Inventorry Holding Cost
+[23:17:07]  Inventorry Holding Cost completed in 0.82 seconds.
+[23:17:07]  Starting: Delay Penalty
+[23:17:08]  Delay Penalty completed in 0.81 seconds.
+[23:17:08]  Starting: Report Generation
+[23:17:09]  Report Generation completed in 0.82 seconds.
+[23:17:09]  Starting: Traffic Optimization
+[23:17:09]  Traffic Optimization completed in 0.83 seconds.
+[23:17:09]  Starting: Waiting Time Optimization
+[23:17:10]  Waiting Time Optimization completed in 0.88 seconds.
+[23:17:10]  Starting: Asset Utilization Optimization
+[23:17:11]  Asset Utilization Optimization completed in 0.83 seconds.
+[23:17:11]  Starting: Weather Optimization
+[23:17:12]  Weather Optimization completed in 0.84 seconds.
+[23:17:12]  Starting: Driver Performance Optimization
+[23:17:12]  Error in Driver Performance Optimization: C:\Users\SANKETH\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe: can't open file 'C:\\Users\\SANKETH\\OneDrive\\Desktop\\logistics_cost_analysis\\src\\prescriptive\\driver_perfomance_optimization.py': [Errno 2] No such file or directory
+
+[23:17:12]  Pipeline halted at stage: Driver Performance Optimization
+[23:17:12] 
+ Pipeline finished in 17.59 seconds.

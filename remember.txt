@@ -23,3 +23,33 @@ D. Advanced Business Insights
 13. Predictive Delay Model
 14. Profitability by Region or Asset
 15. Customer Lifetime Value (CLV)
+
+
+DAX formulas 
+Total_Estimated_Savings = 
+SUMX(
+    'master_prescriptive_summary',
+    COALESCE( 'master_prescriptive_summary'[Estimated_Savings_Per_Trip], 0 )
+    + COALESCE( 'master_prescriptive_summary'[Estimated_Savings_Per_Unit], 0 )
+    + COALESCE( 'master_prescriptive_summary'[Estimated_Improvement_If_Low_Reaches_Optimal], 0 )
+)
+
+Total_Recommendations = DISTINCTCOUNT('master_prescriptive_summary'[Module_Name])
+
+Avg_Min_Penalty = 
+AVERAGEX(
+    FILTER('master_prescriptive_summary', NOT( ISBLANK('master_prescriptive_summary'[Min_Avg_Penalty]) )),
+    'master_prescriptive_summary'[Min_Avg_Penalty]
+)
+
+Best_Dispatch_Hour_Traffic =
+VAR t = FILTER('master_prescriptive_summary', 'master_prescriptive_summary'[Module_Name] = "Traffic")
+RETURN
+IF(
+    COUNTROWS(t) = 0,
+    BLANK(),
+    // pick the row with lowest Min_Avg_Penalty (or lowest Rank if you prefer)
+    MINX( t, 'master_prescriptive_summary'[Recommended_Hour] )
+)
+
+Total_Rows = COUNTROWS('master_prescriptive_summary')

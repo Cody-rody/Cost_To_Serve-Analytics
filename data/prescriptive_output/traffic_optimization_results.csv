@@ -1,0 +1,8 @@
+DayOfWeek,Recommended_Hour,Traffic_Status,Min_Avg_Penalty,Trips_Analyzed,Rank
+Friday,18,Detour,0.0,5,1
+Monday,10,Clear,7.5,8,6
+Saturday,1,Clear,5.0,6,2
+Sunday,3,Clear,6.0,5,4
+Thursday,15,Detour,6.0,5,4
+Tuesday,8,Heavy,30.0,5,7
+Wednesday,8,Clear,6.0,5,4

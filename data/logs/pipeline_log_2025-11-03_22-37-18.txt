@@ -1,0 +1,48 @@
+[22:37:18] 
+=== LOGISTICS PIPELINE EXECUTION STARTED ===
+[22:37:18]  Starting: Data Visualization
+[22:37:27]  Data Visualization completed in 9.23 seconds.
+[22:37:27]  Starting: Fuel Cost Estimation
+[22:37:28]  Fuel Cost Estimation completed in 1.08 seconds.
+[22:37:28]  Starting: Asset Utilization Cost
+[22:37:29]  Asset Utilization Cost completed in 1.09 seconds.
+[22:37:29]  Starting: Handling Cost Estimation
+[22:37:30]  Handling Cost Estimation completed in 0.93 seconds.
+[22:37:30]  Starting: Inventorry Holding Cost
+[22:37:31]  Inventorry Holding Cost completed in 0.82 seconds.
+[22:37:31]  Starting: Delay Penalty
+[22:37:32]  Delay Penalty completed in 0.83 seconds.
+[22:37:32]  Starting: Report Generation
+[22:37:33]  Report Generation completed in 0.83 seconds.
+[22:37:33]  Starting: Traffic Optimization
+[22:37:34]  Error in Traffic Optimization: Traceback (most recent call last):
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'delay_penalty'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\src\prescriptive\traffic_optimization.py", line 140, in <module>
+    main()
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\src\prescriptive\traffic_optimization.py", line 128, in main
+    df = preprocess(df)
+         ^^^^^^^^^^^^^^
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\src\prescriptive\traffic_optimization.py", line 52, in preprocess
+    df["delay_penalty"] = df["delay_penalty"].fillna(0)
+                          ~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\venv\Lib\site-packages\pandas\core\frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\venv\Lib\site-packages\pandas\core\indexes\base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'delay_penalty'
+
+[22:37:34]  Pipeline halted at stage: Traffic Optimization
+[22:37:34] 
+ Pipeline finished in 15.88 seconds.

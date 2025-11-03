@@ -1,0 +1,16 @@
+[22:36:26] 
+=== LOGISTICS PIPELINE EXECUTION STARTED ===
+[22:36:26]  Starting: Data Visualization
+[22:36:34]  Data Visualization completed in 8.81 seconds.
+[22:36:34]  Starting: Fuel Cost Estimation
+[22:36:36]  Fuel Cost Estimation completed in 1.09 seconds.
+[22:36:36]  Starting: Asset Utilization Cost
+[22:36:37]  Asset Utilization Cost completed in 1.11 seconds.
+[22:36:37]  Starting: Handling Cost Estimation
+[22:36:38]  Handling Cost Estimation completed in 1.05 seconds.
+[22:36:38]  Starting: Inventorry Holding Cost
+[22:36:38]  Error in Inventorry Holding Cost: C:\Users\SANKETH\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe: can't open file 'C:\\Users\\SANKETH\\OneDrive\\Desktop\\logistics_cost_analysis\\src\\script\\inventory_holding_cost.py': [Errno 2] No such file or directory
+
+[22:36:38]  Pipeline halted at stage: Inventorry Holding Cost
+[22:36:38] 
+ Pipeline finished in 12.24 seconds.

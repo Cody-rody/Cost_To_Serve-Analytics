@@ -1,0 +1,36 @@
+[22:58:05] 
+=== LOGISTICS PIPELINE EXECUTION STARTED ===
+[22:58:05]  Starting: Data Visualization
+[22:58:16]  Data Visualization completed in 11.17 seconds.
+[22:58:16]  Starting: Fuel Cost Estimation
+[22:58:17]  Fuel Cost Estimation completed in 1.10 seconds.
+[22:58:17]  Starting: Asset Utilization Cost
+[22:58:18]  Asset Utilization Cost completed in 1.24 seconds.
+[22:58:18]  Starting: Handling Cost Estimation
+[22:58:19]  Handling Cost Estimation completed in 0.83 seconds.
+[22:58:19]  Starting: Inventorry Holding Cost
+[22:58:20]  Inventorry Holding Cost completed in 0.98 seconds.
+[22:58:20]  Starting: Delay Penalty
+[22:58:21]  Delay Penalty completed in 0.92 seconds.
+[22:58:21]  Starting: Report Generation
+[22:58:22]  Report Generation completed in 0.89 seconds.
+[22:58:22]  Starting: Traffic Optimization
+[22:58:23]  Traffic Optimization completed in 0.94 seconds.
+[22:58:23]  Starting: Waiting Time Optimization
+[22:58:24]  Waiting Time Optimization completed in 1.04 seconds.
+[22:58:24]  Starting: Asset Utilization Optimization
+[22:58:25]  Asset Utilization Optimization completed in 0.90 seconds.
+[22:58:25]  Starting: Weather Optimization
+[22:58:26]  Error in Weather Optimization: Traceback (most recent call last):
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\src\prescriptive\weather_optimization.py", line 127, in <module>
+    main()
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\src\prescriptive\weather_optimization.py", line 118, in main
+    df = preprocess(df)
+         ^^^^^^^^^^^^^^
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\src\prescriptive\weather_optimization.py", line 39, in preprocess
+    raise KeyError(f"Missing required column: {col}")
+KeyError: 'Missing required column: temp_penalty'
+
+[22:58:26]  Pipeline halted at stage: Weather Optimization
+[22:58:26] 
+ Pipeline finished in 20.86 seconds.

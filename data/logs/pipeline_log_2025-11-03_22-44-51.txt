@@ -1,0 +1,32 @@
+[22:44:51] 
+=== LOGISTICS PIPELINE EXECUTION STARTED ===
+[22:44:51]  Starting: Data Visualization
+[22:44:59]  Data Visualization completed in 7.94 seconds.
+[22:44:59]  Starting: Fuel Cost Estimation
+[22:45:00]  Fuel Cost Estimation completed in 1.08 seconds.
+[22:45:00]  Starting: Asset Utilization Cost
+[22:45:01]  Asset Utilization Cost completed in 0.94 seconds.
+[22:45:01]  Starting: Handling Cost Estimation
+[22:45:02]  Handling Cost Estimation completed in 0.83 seconds.
+[22:45:02]  Starting: Inventorry Holding Cost
+[22:45:03]  Inventorry Holding Cost completed in 0.82 seconds.
+[22:45:03]  Starting: Delay Penalty
+[22:45:04]  Delay Penalty completed in 0.88 seconds.
+[22:45:04]  Starting: Report Generation
+[22:45:04]  Report Generation completed in 0.80 seconds.
+[22:45:04]  Starting: Traffic Optimization
+[22:45:05]  Traffic Optimization completed in 0.87 seconds.
+[22:45:05]  Starting: Waiting Time Optimization
+[22:45:06]  Error in Waiting Time Optimization: Traceback (most recent call last):
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\src\prescriptive\waiting_time_optimization.py", line 124, in <module>
+    main()
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\src\prescriptive\waiting_time_optimization.py", line 112, in main
+    df = preprocess(df)
+         ^^^^^^^^^^^^^^
+  File "C:\Users\SANKETH\OneDrive\Desktop\logistics_cost_analysis\src\prescriptive\waiting_time_optimization.py", line 39, in preprocess
+    raise KeyError("Expected columns 'Waiting_Time' and 'delay_penalty' not found.")
+KeyError: "Expected columns 'Waiting_Time' and 'delay_penalty' not found."
+
+[22:45:06]  Pipeline halted at stage: Waiting Time Optimization
+[22:45:06] 
+ Pipeline finished in 15.01 seconds.
