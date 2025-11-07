@@ -37,7 +37,7 @@ logistics_cost_analysis/
 │   ├── enhanced_pipeline.py          # Modular pipeline with logging & stages
 │   └── run_pipeline.py               # Legacy/simple pipeline runner
 │
-├── prescriptive_visuals.pbix         # Power BI dashboards (prescriptive visuals)
+├── prescriptives.pbix         # Power BI dashboards (prescriptive visuals)
 ├── requirements.txt                  # Python dependencies
 └── README.md                         # Documentation
 ````
